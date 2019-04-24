@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_rot42.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: anmauffr <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: anmauffr <anmauffr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/12 21:13:15 by anmauffr          #+#    #+#             */
-/*   Updated: 2018/07/12 21:32:21 by anmauffr         ###   ########.fr       */
+/*   Updated: 2019/04/24 17:51:13 by anmauffr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ char	*ft_rot42(char *str)
 		j = 0;
 		while (j < 16)
 		{
-			if ((str[i] >= 'a' && str[i] <= 'z') ||
-					(str[i] >= 'A' && str[i] <= 'Z'))
+			if ((str[i] >= 'a' && str[i] <= 'z')
+				|| (str[i] >= 'A' && str[i] <= 'Z'))
 			{
 				if (str[i] == 'Z' || str[i] == 'z')
 					str[i] -= 25;

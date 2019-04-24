@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_is_sort.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: anmauffr <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: anmauffr <anmauffr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/16 18:33:11 by anmauffr          #+#    #+#             */
-/*   Updated: 2018/07/18 14:55:15 by anmauffr         ###   ########.fr       */
+/*   Updated: 2019/04/24 17:51:37 by anmauffr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,8 +34,8 @@ int		ft_is_sort_croiss(int *tab, int length, int (*f)(int, int))
 
 int		ft_is_sort(int *tab, int length, int (*f)(int, int))
 {
-	if (ft_is_sort_decroiss(tab, length, f) == 1 ||
-			ft_is_sort_croiss(tab, length, f) == 1)
+	if (ft_is_sort_decroiss(tab, length, f) == 1
+		|| ft_is_sort_croiss(tab, length, f) == 1)
 		return (1);
 	return (0);
 }

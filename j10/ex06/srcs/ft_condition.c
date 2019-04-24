@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_condition.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: anmauffr <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: anmauffr <anmauffr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/07/16 19:00:26 by anmauffr          #+#    #+#             */
-/*   Updated: 2018/07/17 00:01:57 by anmauffr         ###   ########.fr       */
+/*   Updated: 2019/04/24 17:52:13 by anmauffr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int		ft_cond_op(char *operateur, int nb2)
 {
-	if ((operateur[0] == '+' || operateur[0] == '-' || operateur[0] == '*' ||
-			operateur[0] == '/' || operateur[0] == '%') && operateur[1] == '\0')
+	if ((operateur[0] == '+' || operateur[0] == '-' || operateur[0] == '*'
+		|| operateur[0] == '/' || operateur[0] == '%') && operateur[1] == '\0')
 	{
 		if (operateur[0] == '/' && nb2 == 0)
 		{
